@@ -10,6 +10,7 @@ entity:
       valid_from: 2026-09-04T07:22:41.902Z
   category: crm-sales
 profile:
+  summary: Quotarider is a revenue platform that combines a CRM, sales pipelines, revenue attribution, and outbound email sent through the customer's own connected mailboxes.
   description: Quotarider provides CRM, sales pipelines, revenue analytics, and outbound email through connected mailboxes.
   links:
     site: https://quotarider.com
@@ -38,13 +39,14 @@ offers:
       benefits:
         - benefit_id: ben_01
           kind: discount
-          applies_to: any Quotarider paid plan
-          description: Additional 25% discount, combinable with founder pricing and yearly discounts
+          applies_to: Any Quotarider paid plan
+          description: Extra 25% off any paid plan, stacking with founder pricing and yearly discounts
           percentage:
             kind: exact
             basis_points: 2500
       consideration:
-        kind: none
+        kind: variable
+        description: The approved startup pays the discounted price of its chosen paid plan.
     eligibility:
       rule:
         kind: all
@@ -56,7 +58,7 @@ offers:
           - criterion_id: cri_02
             kind: manual
             reason: external-verification
-            statement: The company has a small team and real budget constraints, subject to application review.
+            statement: The company has a small team and real budget constraints; Quotarider reviews every application.
     roles:
       terms_authority_entity_id: ent_01m1nmrqbcww810fayrwtnttcx
       access_operator_entity_id: ent_01m1nmrqbcww810fayrwtnttcx
@@ -64,6 +66,6 @@ offers:
       availability: public
       method: form
       url: https://quotarider.com/startup-program
-      instructions: Apply using the startup form. After approval, sign up with the same email so the discount applies automatically at checkout. Applications are usually reviewed within 1–2 business days.
+      instructions: Apply using the startup form. After approval, sign up with the same email so the discount applies automatically at checkout. Applications are usually reviewed within 1 to 2 business days.
     source_ids:
       - src_20a5976e74144e2075fd04bcc89dc0895a7f58600a94458efaea8efda3df06a0
